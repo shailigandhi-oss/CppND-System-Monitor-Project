@@ -1,2 +1,3 @@
-# CppND-System-Monitor-Project
-Terminal-based system monitor displaying processes, CPU, and memory usage — Udacity C++ Nanodegree
+# Purpose of this Folder
+
+This folder contains the starter code for students to get started on their projects.
