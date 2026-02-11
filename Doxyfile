@@ -1,0 +1,117 @@
+# Doxyfile for CppND System Monitor Project
+
+PROJECT_NAME             = "System Monitor"
+PROJECT_NUMBER           =
+PROJECT_BRIEF            = "Linux system monitor with CPU, memory, and process display"
+PROJECT_LOGO             =
+OUTPUT_DIRECTORY         = docs
+CREATE_SUBDIRS           = NO
+
+# Input
+INPUT                   = include src
+FILE_PATTERNS           = *.h *.cpp *.c
+RECURSIVE               = YES
+EXCLUDE                 =
+EXCLUDE_PATTERNS        = */build/* */cmake-build-*/*
+EXAMPLE_PATH            =
+EXAMPLE_PATTERNS        =
+EXAMPLE_RECURSIVE       = NO
+IMAGE_PATH              = images
+
+# Source browsing
+SOURCE_BROWSER          = YES
+INLINE_SOURCES          = NO
+STRIP_CODE_COMMENTS     = NO
+REFERENCED_BY_RELATION  = YES
+REFERENCES_RELATION     = YES
+USE_HTAGS               = NO
+VERBATIM_HEADERS        = YES
+
+# Preprocessing
+ENABLE_PREPROCESSING    = YES
+MACRO_EXPANSION         = NO
+EXPAND_ONLY_PREDEF      = NO
+SEARCH_INCLUDES         = YES
+INCLUDE_PATH            = include
+INCLUDE_FILE_PATTERNS   =
+PREDEFINED              =
+EXPAND_AS_DEFINED       =
+SKIP_FUNCTION_MACROS    = YES
+
+# External references
+TAGFILES                =
+GENERATE_TAGFILE        =
+ALLEXTERNALS            = NO
+EXTERNAL_GROUPS         = YES
+EXTERNAL_PAGES          = NO
+
+# Diagram generation
+HAVE_DOT                = NO
+DOT_NUM_THREADS         = 0
+
+# Build
+EXTRACT_ALL             = YES
+EXTRACT_PRIVATE         = YES
+EXTRACT_STATIC          = YES
+EXTRACT_LOCAL_CLASSES   = YES
+EXTRACT_LOCAL_METHODS   = NO
+HIDE_UNDOC_MEMBERS      = NO
+HIDE_UNDOC_CLASSES      = NO
+HIDE_FRIEND_COMPOUNDS   = NO
+HIDE_IN_BODY_DOCS       = NO
+CASE_SENSE_NAMES        = YES
+HIDE_SCOPE_NAMES        = NO
+HIDE_COMPOUND_REFERENCE = NO
+SHOW_INCLUDE_FILES      = YES
+SHOW_GROUPED_MEMB_INC   = NO
+FORCE_LOCAL_INCLUDES    = NO
+INLINE_INFO             = YES
+SORT_MEMBER_DOCS        = YES
+SORT_BRIEF_DOCS         = YES
+SORT_MEMBERS_CTORS_1ST  = NO
+SORT_GROUP_NAMES        = NO
+SORT_BY_SCOPE_NAME      = NO
+GENERATE_TODOLIST       = YES
+GENERATE_TESTLIST       = YES
+GENERATE_BUGLIST        = YES
+GENERATE_DEPRECATEDLIST = YES
+ENABLED_SECTIONS        =
+MAX_INITIALIZER_LINES   = 30
+SHOW_USED_FILES         = YES
+SHOW_FILES              = YES
+SHOW_NAMESPACES         = YES
+FILE_VERSION_FILTER     =
+LAYOUT_FILE             =
+CITE_BIB_FILES          =
+
+# Warnings
+QUIET                   = NO
+WARNINGS                = YES
+WARN_IF_UNDOCUMENTED    = YES
+WARN_IF_DOC_ERROR       = YES
+WARN_NO_PARAMDOC        = NO
+WARN_AS_ERROR           = NO
+
+# Output formats
+GENERATE_HTML           = YES
+GENERATE_LATEX          = NO
+GENERATE_RTF            = NO
+GENERATE_XML            = NO
+GENERATE_HTMLHELP       = NO
+GENERATE_QHP            = NO
+GENERATE_ECLIPSEHELP    = NO
+GENERATE_MAN            = NO
+GENERATE_DOCBOOK        = NO
+
+# HTML output
+HTML_OUTPUT             = html
+HTML_FILE_EXTENSION     = .html
+HTML_COLORSTYLE_HUE     = 220
+HTML_COLORSTYLE_SAT     = 100
+HTML_COLORSTYLE_GAMMA   = 80
+HTML_TIMESTAMP          = YES
+HTML_DYNAMIC_SECTIONS   = NO
+HTML_INDEX_NUM_ENTRIES  = 100
+GENERATE_TREEVIEW       = YES
+TREEVIEW_WIDTH          = 250
+FORMULA_FONTSIZE        = 10

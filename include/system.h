@@ -1,3 +1,8 @@
+/**
+ * @file system.h
+ * @brief System aggregate view for the monitor.
+ */
+
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
@@ -7,21 +12,31 @@
 #include "process.h"
 #include "processor.h"
 
+/**
+ * @brief Aggregates CPU, memory, kernel, and process data for display.
+ */
 class System {
  public:
-  Processor& Cpu();                   // TODO: See src/system.cpp
-  std::vector<Process>& Processes();  // TODO: See src/system.cpp
-  float MemoryUtilization();          // TODO: See src/system.cpp
-  long UpTime();                      // TODO: See src/system.cpp
-  int TotalProcesses();               // TODO: See src/system.cpp
-  int RunningProcesses();             // TODO: See src/system.cpp
-  std::string Kernel();               // TODO: See src/system.cpp
-  std::string OperatingSystem();      // TODO: See src/system.cpp
+  /** @brief Reference to the CPU processor. */
+  Processor& Cpu();
+  /** @brief Reference to the list of processes. */
+  std::vector<Process>& Processes();
+  /** @brief Memory utilization as a fraction (0.0 to 1.0). */
+  float MemoryUtilization();
+  /** @brief System uptime in seconds. */
+  long UpTime();
+  /** @brief Total number of processes. */
+  int TotalProcesses();
+  /** @brief Number of running processes. */
+  int RunningProcesses();
+  /** @brief Kernel version string. */
+  std::string Kernel();
+  /** @brief Operating system name. */
+  std::string OperatingSystem();
 
-  // TODO: Define any necessary private members
  private:
-  Processor cpu_ = {};
-  std::vector<Process> processes_ = {};
+  Processor cpu_ = {};           /**< CPU utilization data. */
+  std::vector<Process> processes_ = {};  /**< Process list. */
 };
 
 #endif
